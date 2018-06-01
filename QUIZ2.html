@@ -1,0 +1,105 @@
+<p id="random" style="color: pink; font-size: 200px">
+</p>
+
+<script>
+
+    //solved #1
+    let x = 4
+    let y = 3
+    let z = 2
+    let w = (x + y * z) / (x * y)
+    console.log('solved #1')
+    console.log(Math.pow(w, z));
+
+    // //solved #2
+    var angka = prompt('Silahkan input angka untuk mendapatkan angka random pada page :');
+    var hasil = Math.pow(angka, 2)
+    alert('Kuadrat dari' + ' ' + angka + ' = ' + hasil)
+
+
+    // //solved #3
+    console.log('solved #3')
+    console.log(Math.cbrt(8));
+
+    //solved #4
+    var nilai = 485
+    var tahun = Math.round(nilai / 360);
+    nilai = nilai - (tahun * 360);
+    var bulan = Math.round(nilai / 30);
+    nilai = nilai - (bulan * 30);
+    var minggu = Math.floor(nilai / 7);
+    nilai = nilai - (minggu * 7)
+    var hari = Math.round(nilai / 1);
+    nilai = nilai - (hari * 1);
+
+    console.log('solved #4')
+    console.log('485 hari adalah : ' + tahun + 'tahun, ' + bulan + 'bulan, ' + minggu + 'minggu ,' + hari + 'hari.');
+
+
+
+    //solved #5
+
+    //   Perhitungan fungsi x dan y
+    //     x = andi  y = budi
+        
+    //     x + y = 49
+    //     x / y = 0.4
+    //     x = 0.4y
+
+    //     0.4y + y = 49
+    //     1.4 y = 49
+    //     y = 49 / 1.4
+
+    let usiaBudi = 49 / 1.4;
+    let usiaAndi = 49 - usiaBudi;
+
+    console.log('solved #5')
+    console.log('Usia Andi 2 tahun lagi: ' + (usiaAndi + 2));
+    console.log('Usia Budi 2 tahun lagi: ' + (usiaBudi + 2));
+
+    //solved #6
+    var tanggal = new Date();
+    var day = tanggal.getDate();
+    var month = tanggal.getMonth()
+    var year = tanggal.getFullYear()
+
+    console.log('solved #6')
+    console.log('Hari ini tanggal', day + '-' + (month + 1) + '-' + year);
+    console.log('Besok tanggal', (day + 1) + '-' + (month + 1) + '-' + year);
+    console.log('Kemarin tanggal', (day - 1) + '-' + (month + 1) + '-' + year);
+
+    // //solved #7
+
+    var halo = 'Baca'
+    var carihuruf = 'a'
+    var huruf1 = halo.split(carihuruf);
+    var jumlah = (huruf1.length)-1
+    
+    console.log('solved #7')
+    console.log('Banyak huruf ' + carihuruf + ' adalah ', jumlah);
+
+
+    //solved #8
+    var jarak = 120;
+    var berangkat = 9;
+    var mobil_a = 60;
+    var mobil_b = 40;
+    var tabrakan = jarak / (mobil_a + mobil_b) * 60;
+    console.log(tabrakan)
+    var jam = Math.round(tabrakan / 60);
+    var menit = tabrakan % 60;
+
+    console.log('solved #8')
+    console.log('Mobil A dan B bertabrakan setelah berjalan selama ' + jam + ' jam ' + menit + ' menit')
+    console.log('Mobil A dan B bertabrakan pada waktu ' + (berangkat + jam) + ':' + menit);
+
+    // //solved #9
+    var angkarandom = Math.floor(Math.random() * 100);
+
+    console.log('solved #9 on page')
+    document.getElementById("random").innerHTML = 'Random Number: ' + angkarandom
+
+
+    // //terima kasih 
+
+</script>
